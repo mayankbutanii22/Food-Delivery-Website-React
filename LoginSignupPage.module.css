@@ -1,0 +1,98 @@
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.formBox {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.18);
+}
+
+.toggleBtns {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.toggleBtns button {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;  
+  background: #0070ff;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.active {
+  background: linear-gradient(to right, #0040ff, #0070ff);
+  color: #fff;
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.link {
+  text-align: left;
+  font-size: 13px;
+  color: #0040ff;
+  text-decoration: none;
+}
+
+.submitBtn {
+  background: linear-gradient(to right, #0040ff, #0070ff);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submitBtn:hover {
+  opacity: 0.8;
+}
+
+.switchText {
+  font-size: 13px;
+}
+
+.switchText span {
+  color: #0070ff;
+  cursor: pointer;
+}
+
+.successBox {
+  background: #c9f7c2;
+  color: #215732;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+

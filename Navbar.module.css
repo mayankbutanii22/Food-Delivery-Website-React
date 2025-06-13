@@ -1,0 +1,166 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #16a085; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  box-shadow: 0 4px 12px rgba(22, 160, 133, 0.4);
+  border-radius: 0 0 16px 16px;
+  width: 100%;
+  position: sticky;
+  top:0;
+  z-index: 9999;
+}
+
+.logo a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.navLinks a:hover,
+.navLinks a.active {
+  background-color: #138d75;
+}
+
+.cartCount {
+  background-color: #e74c3c;
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 50%;
+  margin-left: 6px;
+}
+
+.logoutBtn {
+  background-color: #e74c3c;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logoutBtn:hover {
+  background-color: #c0392b;
+}
+
+
+
+
+
+
+/* Tablets: 768px to 425px */
+@media (max-width: 768px) and (min-width: 426px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .navLinks a {
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+
+  .logoutBtn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+/* Mobiles: 424px to 320px */
+@media (max-width: 425px) and (min-width: 321px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .navLinks a {
+    width: 100%;
+    text-align: left;
+  }
+
+  .logoutBtn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+/* Small devices: below 320px */
+@media (max-width: 320px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.8rem;
+  }
+
+  .logo a {
+    font-size: 1.3rem;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    margin-top: 0.8rem;
+  }
+
+  .navLinks a {
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .logoutBtn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    width: 100%;
+    margin-top: 0.8rem;
+  }
+
+  .cartCount {
+    font-size: 0.7rem;
+    padding: 0.1rem 0.4rem;
+  }
+}
